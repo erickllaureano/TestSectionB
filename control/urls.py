@@ -4,6 +4,11 @@ from . import views
 app_name = 'control'
 router = routers.DefaultRouter(trailing_slash=False)
 
+router.register(
+    r'assigned_car',
+    views.AssignedCarsView,
+    'assigned_car'
+)
 
 urlpatterns = [
 
