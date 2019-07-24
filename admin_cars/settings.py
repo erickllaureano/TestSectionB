@@ -40,7 +40,7 @@ INSTALLED_APPS = [
 
     # app
     'catalogues',
-    'control'
+    'control',
 
     # rest_framework
     'rest_framework',
