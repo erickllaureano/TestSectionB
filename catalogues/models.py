@@ -6,6 +6,10 @@ class Users(models.Model):
         max_length=100
     )
     age = models.PositiveIntegerField()
+    username = models.CharField(
+        max_length=50,
+        unique=True
+    )
 
     class Meta:
         db_table = 'Users'
