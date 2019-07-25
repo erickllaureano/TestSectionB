@@ -23,3 +23,7 @@ class AssignedCarsView(viewsets.ModelViewSet):
         )
         return Response(response.data)
 
+
+class UsedCarsView(viewsets.ModelViewSet):
+    serializer_class = serializers.UsedCarSerializer
+    queryset = models.UsedCar.objects.all()

@@ -9,6 +9,11 @@ router.register(
     views.AssignedCarsView,
     'assigned_car'
 )
+router.register(
+    r'used_car',
+    views.UsedCarsView,
+    'used_car'
+)
 
 urlpatterns = [
 
