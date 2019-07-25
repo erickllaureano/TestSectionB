@@ -1,0 +1,468 @@
+{
+	"info": {
+		"_postman_id": "af73d24b-488d-4a43-8cd9-f936d6049c61",
+		"name": "testB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "catalogues",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "List Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/users/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"users",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create User",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Jazmin Orozco\",\n\t\"age\": 22,\n\t\"username\": \"jaz\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/users",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"users"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update User",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\": \"Jazmin Orozco\",\n\t\"age\": 22,\n\t\"username\": \"jaz\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/users/3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"users",
+										"3"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Users",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/users/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"users",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Cars",
+					"item": [
+						{
+							"name": "List Cars",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/cars",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"cars"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Cars",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/cars/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"cars",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Cars",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"modelo\": \"VW\",\n\t\"marca\": \"gol\",\n\t\"color\": \"rojo\",\n\t\"placa\": \"mbp8980\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/cars",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"cars"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Cars",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"modelo\": \"VW\",\n\t\"marca\": \"gol\",\n\t\"color\": \"rojo\",\n\t\"placa\": \"mbp8980\"\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/cars/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"cars",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Cars",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/catalogues/cars/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"catalogues",
+										"cars",
+										"1"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		},
+		{
+			"name": "control",
+			"item": [
+				{
+					"name": "Assigned Cars",
+					"item": [
+						{
+							"name": "List Assigned cars",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/control/assigned_car",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"control",
+										"assigned_car"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Assigned cars",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/control/assigned_car/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"control",
+										"assigned_car",
+										"4"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Assigned car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"idUser\": 3,\n\t\"idCar\":1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/control/assigned_car",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"control",
+										"assigned_car"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Used Cars",
+					"item": [
+						{
+							"name": "Create Used car",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"type": "text",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"expiration\": \"2019-07-24 19:39:04.935989\",\n\t\"idAssignedCar\": 6\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/control/used_car",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"control",
+										"used_car"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Used car",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"expiration\": \"2019-07-23 18:54:04.935989\",\n\t\"idAssignedCar\": 1\n}"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/control/used_car",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"control",
+										"used_car"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"_postman_isSubFolder": true
+				}
+			]
+		}
+	]
+}
