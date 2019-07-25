@@ -11,4 +11,3 @@ class UserView(viewsets.ModelViewSet):
 class CarView(viewsets.ModelViewSet):
     serializer_class = serializers.CarSerializer
     queryset = models.Cars.objects.all()
-

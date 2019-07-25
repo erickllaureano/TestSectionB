@@ -16,7 +16,7 @@ class AssignedCarSerializer(serializers.ModelSerializer):
     )
     car = utilities_serializers.MultiSlugRelatedField(
         source='idCar',
-        slug_fields=('id','modelo', 'marca', 'color', 'placa'),
+        slug_fields=('id', 'modelo', 'marca', 'color', 'placa'),
         read_only=True
     )
     user = utilities_serializers.MultiSlugRelatedField(
@@ -84,7 +84,9 @@ class UsedCarSerializer(serializers.ModelSerializer):
             diff_date = now_time - user_whit_car.expiration
             if diff_date.days < 0:
                 # Al usuario aun le falta tiempo para su expiracion
-                self.send_error_message('El usuario ya tiene un carro asignado')
+                self.send_error_message(
+                    'El usuario ya tiene un carro asignado'
+                )
             else:
                 models.UsedCar.objects.filter(
                     idAssignedCar__idUser=user

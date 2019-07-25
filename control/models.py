@@ -1,14 +1,14 @@
 from django.db import models
-from catalogues import models as catalogModels
+from catalogues import models as catalog_models
 
 
 class AssignedCars(models.Model):
     idCar = models.ForeignKey(
-        catalogModels.Cars,
+        catalog_models.Cars,
         on_delete=models.DO_NOTHING
     )
     idUser = models.ForeignKey(
-        catalogModels.Users,
+        catalog_models.Users,
         on_delete=models.DO_NOTHING
     )
 

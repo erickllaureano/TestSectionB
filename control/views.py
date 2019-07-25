@@ -11,7 +11,9 @@ class AssignedCarsView(viewsets.ModelViewSet):
 
     def retrieve(self, request, *args, **kwargs):
         try:
-            user = catalogues_models.Users.objects.get(pk=self.kwargs.get('pk'))
+            user = catalogues_models.Users.objects.get(
+                pk=self.kwargs.get('pk')
+            )
         except catalogues_models.Users.DoesNotExist:
             raise exceptions.NotFound({'message': 'El usuario no existe'})
         instance = models.AssignedCars.objects.filter(
